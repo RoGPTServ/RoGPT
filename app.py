@@ -13,7 +13,7 @@ def chat():
 
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-4",  # Replace with your model (e.g., gpt-3.5-turbo or gpt-4)
+            model="gpt-3.5-turbo",  # Replace with your model (e.g., gpt-3.5-turbo or gpt-4)
             messages=[
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": user_message}
